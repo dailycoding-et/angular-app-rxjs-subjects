@@ -1,0 +1,12 @@
+<div class="mt-3">
+    <div *ngIf="userDetails">
+        <h3>{{userDetails.firstName}} {{userDetails.secondName}}</h3>
+        <p>Username : {{userDetails.userName}}</p>
+        <p>Mobile : {{userDetails.mobile}}</p>
+        <p>Email : {{userDetails.email}}</p>
+        <p>Gender : {{userDetails.gender}}</p>
+    </div>
+    <div *ngIf="!userDetails" style="color: red;">
+        Please select any user
+    </div>
+</div>
